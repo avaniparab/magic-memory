@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import './App.css'
-import SingleCard from './componentes/SingleCard'
+import './styles/App.css'
+import SingleCard from './components/SingleCard'
 
 const cardImages =[
   {"src":"/img/helmet-1.png", matched: false},
@@ -14,10 +14,11 @@ const cardImages =[
 
 function App() {
   const [cards, setCards] = useState([])
-  const [turns, setTurns] = useState([0])
+  const [turns, setTurns] = useState(0)
   const [choiceOne, setChoiceOne] = useState(null)
   const [choiceTwo, setChoiceTwo] = useState(null)
   const [disabled, setDisabled] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
 
   //shuffle cards
   const shuffleCards =() => {
@@ -36,7 +37,7 @@ function App() {
   choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
  }
 
- // compare 2 se;ected cards
+ // compare 2 selected cards
  useEffect(() => {
   
     if (choiceOne && choiceTwo){
@@ -75,9 +76,29 @@ function App() {
   shuffleCards()
  }, [])
 
+ useEffect(() => {
+    if (cards.length > 0 && cards.every(card => card.matched)) {
+      setShowPopup(true)
+
+      setTimeout(() => {
+        setShowPopup(false)
+        shuffleCards()
+      }, 2500)
+    }
+  }, [cards])
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <h2>🎉 Congratulations!</h2>
+            <p>You matched all the cards.</p>
+            <p>Starting a new game...</p>
+          </div>
+        </div>
+      )}
       <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">
