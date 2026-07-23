@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# 🧙‍♂️ Magic Match
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun and interactive memory card matching game built with **React.js**. Flip cards, find matching pairs, and complete the game in as few turns as possible!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎮 Demo
 
-### `npm start`
+*(Add your deployed link here if you host it on GitHub Pages, Netlify, or Vercel.)*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- 🃏 Memory card matching gameplay
+- 🔀 Randomized card shuffle every game
+- 🎯 Turn counter
+- ✅ Matched cards remain visible
+- 🚫 Prevents multiple card selections while checking matches
+- 🎉 Elegant completion popup after finishing the game
+- 🔄 Automatically starts a new game after completion
+- 📱 Responsive and clean UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js
+- JavaScript 
+- HTML
+- CSS
+- React Hooks
+  - useState
+  - useEffect
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Project Structure
 
-### `npm run eject`
+```
+magic-match/
+│
+├── public/
+│   ├── img/
+│   ├── favicon.ico
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── SingleCard.js
+│   │   └── SingleCard.css
+│   │
+│   ├── styles/
+│   │   ├── App.css
+│   │   └── index.css
+│   │
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Clone the repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/your-username/magic-match.git
+```
 
-## Learn More
+### Navigate to the project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd magic-match
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install dependencies
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Run the development server
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application will open at:
 
-### Making a Progressive Web App
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🎯 How to Play
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Click on a card to reveal it.
+2. Select another card.
+3. If both cards match, they remain face up.
+4. If they don't match, they flip back after a short delay.
+5. Match all pairs to complete the game.
+6. Once all cards are matched, a congratulatory popup appears and a new game starts automatically.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## 🌱 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Multiple difficulty levels
+- Timer mode
+- High score leaderboard
+- Sound effects and background music
+- Card flip animations
+- Theme selection
+- Mobile-friendly enhancements
+
+---
+
+## 📚 What I Learned
+
+Through this project, I gained hands-on experience with:
+
+- React functional components
+- State management using React Hooks
+- Event handling
+- Conditional rendering
+- Array manipulation
+- Component-based architecture
+- Managing game logic in React
+
+---
+
+## 👩‍💻 Author
+
+**Avani Parab**
+
+GitHub: https://github.com/avaniparab
+
+LinkedIn: https://linkedin.com/in/avaniparab
