@@ -6,7 +6,7 @@ A fun and interactive memory card matching game built with **React.js**. Flip ca
 
 ## 🎮 Demo
 
-*(Add your deployed link here if you host it on GitHub Pages, Netlify, or Vercel.)*
+*https://magic-memory-sigma.vercel.app*
 
 ---
 
